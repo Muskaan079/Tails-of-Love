@@ -1,0 +1,264 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #de8416;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar {
+    background: #e37610;
+    padding: 10px 0;
+}
+
+.brand-logo {
+    align-items: center;
+    justify-content: center;
+    color: #fff; /* Text color */
+    font-size: 100px; /* Font size */
+    font-weight: 700; /* Font weight */
+    text-align: center; /* Center alignment */
+    display: block; /* Block display to center horizontally */
+    margin: 0 auto; /* Center horizontally if it's a block-level element */
+    font-family: 'Raleway', sans-serif; /* Font family */
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-menu li {
+    padding: 10px;
+}
+
+.nav-menu a {
+    color: #d8e18f;
+    text-decoration: none;
+    padding: 8px 16px;
+    transition: background 0.3s, color 0.3s; /* Smooth transition for background and color */
+    background-color: transparent; /* Default background */
+    border-radius: 5px;
+}
+
+.nav-menu a:hover,
+.nav-menu a:focus {
+    background-color: #e69f11; /* Background color on hover/focus */
+    color: #0e0e0e; /* Text color on hover/focus */
+}
+
+.nav-menu a:active {
+    background-color: #fe9b18; /* Background color when button is clicked */
+    color: #0c0c0c; /* Text color when button is clicked */
+}
+
+/* Hero Section Styling */
+.hero-section {
+    background-image: url('images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.hero-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    font-family: 'Raleway', sans-serif; /* Font family for hero section heading */
+    font-size: 100px; /* Font size */
+    font-weight: 700; /* Font weight */
+    text-align: center; /* Center alignment */
+    color: #fff; /* Text color */
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Optional text shadow */
+}
+
+.hero-content h1 {
+    font-size: 72px; /* Increased font size */
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+    text-decoration: none;
+}
+
+.report-section {
+    padding: 50px 0;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.report-text {
+    margin-bottom: 60px; /* Increase space between text and button */
+    font-size: 18px; /* Adjust font size if needed */
+}
+
+.btn-primary {
+    background: #f47c3c;
+    color: #fff;
+    display: inline-block; /* Ensure button respects margins and spacing */
+    margin-top: 10px; /* Additional spacing if needed */
+}
+
+.btn-primary:hover {
+    background: #ae5728;
+}
+
+.btn-secondary {
+    background: #ae5728;
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background: #333;
+}
+
+.adopt-section,
+.donate-section,
+.report-section,
+.contact-section {
+    padding: 50px 0;
+    background: #f9f9f9;
+}
+
+.adopt-gallery {
+    display: flex; /* Use Flexbox for horizontal layout */
+    flex-wrap: wrap; /* Allow wrapping if the screen is too small */
+    gap: 20px; /* Space between cards */
+    justify-content: center; /* Center align the cards */
+    margin-top: 20px;
+}
+
+.adopt-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    max-width: 250px; /* Max-width to control the size */
+    flex: 1 1 220px; /* Allow cards to shrink and grow to fit the space */
+}
+
+.adopt-card:hover {
+    transform: translateY(-5px);
+}
+
+.adopt-card img {
+    width: 100%;
+    height: 150px; /* Height of the image */
+    object-fit: cover;
+}
+
+.adopt-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.adopt-info h3 {
+    margin-bottom: 10px;
+    font-size: 18px; /* Reduced font size */
+}
+
+.adopt-info p {
+    margin-bottom: 5px;
+    font-size: 14px; /* Reduced font size */
+}
+
+.donate-section {
+    text-align: center;
+    background: #fff;
+}
+
+.donate-section p {
+    margin-bottom: 20px;
+}
+
+.contact-section {
+    background: #333;
+    color: #fff;
+}
+
+.contact-info {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.contact-info li {
+    margin-bottom: 10px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info i {
+    margin-right: 10px;
+    color: #f47c3c;
+}
+
+footer {
+    background: #de610d;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-menu {
+        flex-direction: column;
+        display: none;
+    }
+
+    .navbar.active .nav-menu {
+        display: flex;
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .adopt-card {
+        max-width: 100%; /* Make cards full width on small screens */
+        flex: 1 1 100%; /* Allow cards to take full width on small screens */
+    }
+}
